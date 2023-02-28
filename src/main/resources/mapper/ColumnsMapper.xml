@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.zy.codegen.dao.mapper.ColumnsMapper">
+    <resultMap id="BaseResultMap" type="cn.zy.codegen.dao.entity.Columns">
+        <!--@mbg.generated-->
+        <!--@Table information_schema.`COLUMNS`-->
+        <result column="COLUMN_NAME" jdbcType="VARCHAR" property="columnName"/>
+        <result column="ORDINAL_POSITION" jdbcType="BIGINT" property="ordinalPosition"/>
+        <result column="COLUMN_DEFAULT" jdbcType="LONGVARCHAR" property="columnDefault"/>
+        <result column="IS_NULLABLE" jdbcType="VARCHAR" property="isNullable"/>
+        <result column="DATA_TYPE" jdbcType="VARCHAR" property="dataType"/>
+        <result column="CHARACTER_MAXIMUM_LENGTH" jdbcType="BIGINT" property="characterMaximumLength"/>
+        <result column="CHARACTER_OCTET_LENGTH" jdbcType="BIGINT" property="characterOctetLength"/>
+        <result column="NUMERIC_PRECISION" jdbcType="BIGINT" property="numericPrecision"/>
+        <result column="NUMERIC_SCALE" jdbcType="BIGINT" property="numericScale"/>
+        <result column="COLUMN_TYPE" jdbcType="LONGVARCHAR" property="columnType"/>
+        <result column="COLUMN_KEY" jdbcType="VARCHAR" property="columnKey"/>
+        <result column="EXTRA" jdbcType="VARCHAR" property="extra"/>
+        <result column="COLUMN_COMMENT" jdbcType="VARCHAR" property="columnComment"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        `COLUMN_NAME`, ORDINAL_POSITION, COLUMN_DEFAULT, IS_NULLABLE, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH,
+        CHARACTER_OCTET_LENGTH, NUMERIC_PRECISION, NUMERIC_SCALE, COLUMN_TYPE, COLUMN_KEY,
+        EXTRA, COLUMN_COMMENT
+    </sql>
+</mapper>
