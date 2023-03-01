@@ -10,6 +10,8 @@
     </resultMap>
     <sql id="Base_Column_List">
         <!--@mbg.generated-->
-        NON_UNIQUE, INDEX_NAME, `COLUMN_NAME`
+        NON_UNIQUE,
+        INDEX_NAME,
+        `COLUMN_NAME`
     </sql>
 </mapper>

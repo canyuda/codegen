@@ -9,8 +9,8 @@ public enum FileType {
     PROPERTIES("properties", ".properties"),
     ;
 
-    private String name;
-    private String suffix;
+    private final String name;
+    private final String suffix;
 
     FileType(String name, String suffix) {
         this.name = name;
