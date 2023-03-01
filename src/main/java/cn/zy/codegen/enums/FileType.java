@@ -1,0 +1,19 @@
+package cn.zy.codegen.enums;
+
+import lombok.Getter;
+
+@Getter
+public enum FileType {
+    JAVA("java", ".java"),
+    XML("xml", ".xml"),
+    PROPERTIES("properties", ".properties"),
+    ;
+
+    private String name;
+    private String suffix;
+
+    FileType(String name, String suffix) {
+        this.name = name;
+        this.suffix = suffix;
+    }
+}
