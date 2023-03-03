@@ -1,6 +1,6 @@
 package ${basePackage}.${appProjectNameToCamelCase}.web.config.springmvc;
 
-import cn.zy.common.springmvc.interceptor.UserInterceptor;
+import ${basePackage}.${appProjectNameToCamelCase}.web.config.springmvc.UserInterceptor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;

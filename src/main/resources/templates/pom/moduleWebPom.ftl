@@ -39,10 +39,6 @@
             <groupId>cn.zy</groupId>
             <artifactId>${appProjectName}-integration</artifactId>
         </dependency>
-        <dependency>
-            <groupId>cn.zy</groupId>
-            <artifactId>lowcode-sdk</artifactId>
-        </dependency>
     </dependencies>
     <build>
         <finalName>${dollar}{project.artifactId}</finalName>

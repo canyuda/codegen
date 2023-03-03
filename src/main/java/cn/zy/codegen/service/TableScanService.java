@@ -1,5 +1,6 @@
 package cn.zy.codegen.service;
 
+import cn.zy.codegen.model.TableDefModel;
 import freemarker.template.Template;
 
 public interface TableScanService {
@@ -21,5 +22,7 @@ public interface TableScanService {
 
     void genModuleWebPom(String baseDir);
 
-    void genAllPom(String baseDir);
+    void genAll(String baseDir);
+
+    void genTables(String baseDir, TableDefModel tableDefModel);
 }

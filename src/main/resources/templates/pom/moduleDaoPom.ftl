@@ -8,7 +8,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>${appProjectName}-dao</artifactId>
-    <name>${appProjectName}-dal</name>
+    <name>${appProjectName}-dao</name>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

@@ -4,6 +4,8 @@
     <resultMap id="BaseResultMap" type="cn.zy.codegen.dao.entity.Columns">
         <!--@mbg.generated-->
         <!--@Table information_schema.`COLUMNS`-->
+        <result column="TABLE_SCHEMA" jdbcType="VARCHAR" property="tableSchema"/>
+        <result column="TABLE_NAME" jdbcType="VARCHAR" property="tableName"/>
         <result column="COLUMN_NAME" jdbcType="VARCHAR" property="columnName"/>
         <result column="ORDINAL_POSITION" jdbcType="BIGINT" property="ordinalPosition"/>
         <result column="COLUMN_DEFAULT" jdbcType="LONGVARCHAR" property="columnDefault"/>
@@ -20,6 +22,8 @@
     </resultMap>
     <sql id="Base_Column_List">
         <!--@mbg.generated-->
+        TABLE_SCHEMA,
+        `TABLE_NAME`,
         `COLUMN_NAME`,
         ORDINAL_POSITION,
         COLUMN_DEFAULT,

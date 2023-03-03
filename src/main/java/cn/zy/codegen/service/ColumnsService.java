@@ -6,4 +6,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
 public interface ColumnsService extends IService<Columns> {
 
 
+    void testWrapper();
+
 }

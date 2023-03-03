@@ -9,7 +9,7 @@
         <module>${appProjectName}-web</module>
         <module>${appProjectName}-client</module>
         <module>${appProjectName}-common</module>
-        <module>${appProjectName}-handler</module>
+        <module>${appProjectName}-handle</module>
         <module>${appProjectName}-integration</module>
     </modules>
     <parent>
@@ -25,7 +25,7 @@
     <description>${appProjectName} for Spring Boot</description>
 
     <properties>
-        <oa-test-demo.version>1.0-SNAPSHOT</oa-test-demo.version>
+        <${appProjectName}.version>1.0-SNAPSHOT</${appProjectName}.version>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -61,7 +61,7 @@
             </dependency>
             <dependency>
                 <groupId>cn.zy</groupId>
-                <artifactId>${appProjectName}-handler</artifactId>
+                <artifactId>${appProjectName}-handle</artifactId>
                 <version>${dollar}{${appProjectName}.version}</version>
             </dependency>
             <dependency>
@@ -83,6 +83,16 @@
                 <groupId>cn.zy</groupId>
                 <artifactId>zy-common</artifactId>
                 <version>${dollar}{zy-common.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.zy</groupId>
+                <artifactId>lowcode-user-sdk</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.zy</groupId>
+                <artifactId>lowcode-permission-sdk</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -111,8 +121,8 @@
 
         <dependency>
             <groupId>cn.zy</groupId>
-            <artifactId>zy-base-common</artifactId>
-            <version>1.0.2-RELEASE</version>
+            <artifactId>zy-common</artifactId>
+            <version>1.0.3-RELEASE</version>
         </dependency>
         <dependency>
             <groupId>io.springfox</groupId>
@@ -235,6 +245,14 @@
         <dependency>
             <groupId>cn.zy</groupId>
             <artifactId>zy-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.zy</groupId>
+            <artifactId>lowcode-user-sdk</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.zy</groupId>
+            <artifactId>lowcode-permission-sdk</artifactId>
         </dependency>
     </dependencies>
 

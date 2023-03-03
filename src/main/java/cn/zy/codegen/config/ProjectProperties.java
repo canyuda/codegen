@@ -14,6 +14,8 @@ public class ProjectProperties {
     private String basePackage;
     private String appProjectNameToCamelCase;
 
+    private String tableSchema;
+
     public String getAppProjectNameToCamelCase() {
         if (StrUtil.isBlank(appProjectNameToCamelCase)) {
             return StrUtil.toCamelCase(appProjectName, '-');

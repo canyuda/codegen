@@ -1,4 +1,4 @@
-package ${basePackage}.${appProjectNameToCamelCase};
+package ${basePackage}.${appProjectNameToCamelCase}.web;
 
 import com.ctrip.framework.apollo.spring.annotation.EnableApolloConfig;
 import org.mybatis.spring.annotation.MapperScan;

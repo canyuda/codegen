@@ -2,6 +2,7 @@ package cn.zy.codegen.service.impl;
 
 import cn.zy.codegen.config.ProjectProperties;
 import cn.zy.codegen.config.template.TemplateManagerConfig;
+import cn.zy.codegen.service.ColumnsService;
 import cn.zy.codegen.service.TableScanService;
 import freemarker.template.Template;
 import org.junit.jupiter.api.Assertions;
@@ -21,6 +22,9 @@ class TableScanServiceImplTest {
     private TableScanService tableScanService;
     @Autowired
     private ProjectProperties projectProperties;
+
+    @Autowired
+    private ColumnsService columnsService;
 
     private String baseDir;
 
@@ -74,5 +78,27 @@ class TableScanServiceImplTest {
     @Test
     void genModuleWebPom() {
         tableScanService.genModuleWebPom(baseDir);
+    }
+
+    @Test
+    void testWrapper() {
+        columnsService.testWrapper();
+    }
+
+    @Test
+    void genMainJavaCode() {
+    }
+
+    @Test
+    void genResourceCode() {
+    }
+
+    @Test
+    void genAll() {
+        tableScanService.genAll(baseDir);
+    }
+
+    @Test
+    void genTables() {
     }
 }
