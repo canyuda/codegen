@@ -48,13 +48,16 @@ public class ${entityName} implements Serializable{
     private Boolean deleted = false;
 
 	<#else>
-	${at}TableField(value="${col.columnName}")
+	${at}TableField(value="${col.srcColumnName}")
 	<#if col.columnType='LocalDateTime'>
 	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss" , timezone = "GMT+8")
+	<#elseif col.columnType='LocalDate'>
+	@JsonFormat(pattern = "yyyy-MM-dd")
+	<#elseif col.columnType='LocalTime'>
+	@JsonFormat(pattern = "HH:mm:ss")
 	</#if>
 	${at}ApiModelProperty("${col.columnComment!''}")
     private ${col.columnType} ${col.columnName};
-
 	</#if>
 	</#list>
 
